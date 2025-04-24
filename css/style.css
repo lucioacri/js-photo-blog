@@ -35,3 +35,14 @@ main {
 .my-card-date {
   font-family: "Sometype Mono", monospace;
 }
+
+.fixed-section {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.315);
+  z-index: 20;
+  height: 100vh;
+}
+.fixed-img {
+  max-width: 600px;
+}
