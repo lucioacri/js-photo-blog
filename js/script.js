@@ -11,8 +11,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((response) => {
     <div class="card" style="width: 18rem;">
   <img src="${img}" class="card-img-top" alt="${id}">
   <div class="card-body">
-    <p class="card-text">${title}</p>
-    <p class="card-text">${date}</p>
+    <p class="card-text my-card-title">${title}</p>
+    <p class="card-text my-card-date">${date}</p>
   </div>
 </div>
 </div>`;

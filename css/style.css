@@ -1,0 +1,14 @@
+.header-title {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.my-card-title {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 2rem;
+}
+
+.my-card-date {
+  font-family: "Sometype Mono", monospace;
+}
