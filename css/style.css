@@ -14,8 +14,18 @@ main {
   font-weight: 600;
 }
 
+.card-col {
+  transition: transform 1s;
+}
+
+.card-col:hover {
+  transform: rotate(10deg) scale(1.2);
+  z-index: 30;
+}
+
 .my-card {
   position: relative;
+  cursor: pointer;
 }
 
 .card-decoration {
