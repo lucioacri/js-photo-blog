@@ -20,7 +20,7 @@ main {
 
 .card-col:hover {
   transform: rotate(10deg) scale(1.2);
-  z-index: 30;
+  z-index: 20;
 }
 
 .my-card {
@@ -50,7 +50,7 @@ main {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.315);
-  z-index: 20;
+  z-index: 30;
   height: 100vh;
 }
 .fixed-img {
