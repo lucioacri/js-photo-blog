@@ -27,20 +27,21 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((response) => {
   myCards.forEach((card) => {
     const cardImg = card.querySelector(".card-img-top").src;
     const cardId = card.querySelector(".card-img-top").alt;
+    const activeImg = card.querySelector(".card-img-top");
     card.addEventListener("click", function (e) {
       e.preventDefault();
       overlay.classList.replace("d-none", "d-flex");
+      overlay.classList.add("flex-column");
       overlay.querySelector("img").src = cardImg;
       overlay.querySelector("img").alt = cardId;
+      activeImg.classList.add("hidden-img");
     });
   });
 
   closeButton.addEventListener("click", function (e) {
     e.preventDefault();
+    const activeImg = document.querySelector(".card-img-top.hidden-img");
     overlay.classList.replace("d-flex", "d-none");
+    activeImg.classList.remove("hidden-img");
   });
 });
-
-// cardsRow.innerHTML += `<div class="d-flex justify-content-center align-items-center fixed-div">
-// <img src="${img}" class="fixed-img" alt="${id}">
-// </div>`;

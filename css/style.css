@@ -56,3 +56,11 @@ main {
 .fixed-img {
   max-width: 600px;
 }
+
+.close-button {
+  margin: 2rem;
+}
+
+.hidden-img {
+  opacity: 0;
+}
